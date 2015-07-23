@@ -17,10 +17,13 @@ public:
     static const int Default_Capacity = 5;
     //Constructor
     GCharacter(std::string name="Adi",int capacity=Default_Capacity);
+    
     //Copy constructor
     GCharacter(const GCharacter& source);
+    
     //Overloaded Assignment operator
     GCharacter& operator=(const GCharacter& source);
+    
     //Destructor
     ~GCharacter();
     

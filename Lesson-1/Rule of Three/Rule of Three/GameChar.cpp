@@ -29,8 +29,8 @@ GCharacter::GCharacter(const GCharacter& source){
     
     copy(source.toolHolder,source.toolHolder + used, toolHolder);
     
-    for(int i=0;i<this->used;++i)
-        this->toolHolder[i] = source.toolHolder[i];
+//    for(int i=0;i<this->used;++i)
+//        this->toolHolder[i] = source.toolHolder[i];
 }
 
 //Overloaded Assignment Operator
@@ -48,11 +48,13 @@ GCharacter& GCharacter::operator=(const GCharacter& source){
     return *this;
 }
 
+
 //Destructor
 GCharacter::~GCharacter(){
     cout <<"Destructor called for " << this->name << "@ this memory location: " << this << endl;
     delete[] toolHolder;
 }
+
 
 //Inserting a new tool to the tool holder
 void GCharacter::insert(const string& toolName){

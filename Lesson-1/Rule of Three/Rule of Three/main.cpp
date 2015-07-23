@@ -18,5 +18,13 @@ int main(int argc, const char * argv[]) {
     gc1.insert("Axe");
     
     cout << gc1 << endl;
+    
+    GCharacter gc2("Chris",5);
+    gc2.insert("Axe");
+    gc2 = gc1;
+    cout << gc2 << endl;
+    
+    GCharacter gc3 = gc2;
+    cout << gc3 << endl;
     return 0;
 }
